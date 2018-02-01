@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Portfolio Blog</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Content</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @blogs %>
+  </tbody>
+</table>
+
+<br>
+<button class="submit_button">
+<%= link_to 'New Blog', new_blog_path %>
+</button>
