@@ -1,5 +1,4 @@
 require 'io/console'
-require 'colorize'
 @wallet = 100
 
 # ============== 21 ============================== #
@@ -247,7 +246,8 @@ class Deck
       '`------`'.colorize(:color => :Black, :background => :white)]
     else
       ['.------.'.colorize(:color => :Black, :background => :white),
-      '|'.colorize(:color => :Black, :background => :white) + value.colorize(:color => :Black, :background => :white) + ' /\  |'.colorize(:color => :Black, :background => :white),
+      '|        '.colorize(:color => :Black, :background => :white) + value.colorize(:color => :Black, :background => :white) + 
+        ' /\  |'.colorize(:color => :Black, :background => :white),
       '| /  \ |'.colorize(:color => :Black, :background => :white),
       '| \  / |'.colorize(:color => :Black, :background => :white),
       '|  \/ '.colorize(:color => :Black, :background => :white) + value.colorize(:color => :Black, :background => :white) + '|'.colorize(:color => :Black, :background => :white),
